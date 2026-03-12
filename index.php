@@ -1,3 +1,5 @@
+<?php include("config.php"); ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -47,7 +49,15 @@
     <!-- /menüü -->
     <!-- sisu -->
      <div class="container mt-4">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <?php
+        $paring = "SELECT * FROM autod";
+        $valjund = mysqli_query($yhendus, $paring);
+        while($rida = mysqli_fetch_row($valjund)){
+            var_dump($rida[1],$rida[2]);
+        }
+    
+        ?>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
 
   <div class="col">
     <div class="card h-100">
