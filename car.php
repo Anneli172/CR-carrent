@@ -49,7 +49,7 @@
     <!-- /menüü -->
 
 <?php
-    $paring = "SELECT * FROM autod WHERE kl=5";
+    $paring = "SELECT * FROM autod WHERE id=5";
     $valjund = mysqli_query($yhendus, $paring);
     $rida = mysqli_fetch_assoc($valjund);
 ?>
