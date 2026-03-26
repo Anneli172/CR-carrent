@@ -49,31 +49,32 @@
     <!-- /menüü -->
     <!-- sisu -->
      <div class="container mt-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
         <?php
-        $paring = "SELECT * FROM autod";
+        $paring = "SELECT * FROM autod LIMIT 8";
         $valjund = mysqli_query($yhendus, $paring);
-        while($rida = mysqli_fetch_row($valjund)){
-            var_dump($rida[1],$rida[2]);
-        }
+        while($rida = mysqli_fetch_assoc($valjund)){
+            //var_dump($rida);
+        
     
         ?>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
 
   <div class="col">
     <div class="card h-100">
-      <img src="https://loremflickr.com/400/250/audi" class="card-img-top" alt="audi">
+      <img src="https://loremflickr.com/400/250/<?php echo $rida['mark']; ?>" class="card-img-top" alt="audi">
       <div class="card-body">
-        <h5 class="card-title">Audi Q8</h5>
-        <p>2010</p>
-        <p>Mootor: V8</p>
-        <p>Kütus: bensiin</p>
-        <p>Hind: 150£/päev</p>
+        <h5 class="card-title"><?php echo $rida['mark']." ".$rida['model']; ?></h5>
+        <p><?php echo $rida['year']; ?></p>
+        <p>Mootor: <?php echo $rida['engine']; ?></p>
+        <p>Kütus: <?php echo $rida['fuel']; ?></p>
+        <p>Hind: <?php echo $rida['price']; ?>£/päev</p>
         <a href="single_car.php" class="btn btn-dark w-100">Rendi</a>
       </div>
     </div>
-  </div>
-
-  
+</div>
+<?php
+}
+?>
 </div>
      </div>
     <!-- /sisu  -->

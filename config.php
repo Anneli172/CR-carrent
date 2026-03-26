@@ -2,7 +2,7 @@
 
 $db_server = 'localhost';
 $db_andmebaas = 'cr_rent';
-$db_kasutaja = 'Anneli';
+$db_kasutaja = 'atikker';
 $db_salasona = 'Passw0rd';
 
 // ühendus andmebaasiga
