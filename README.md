@@ -1,15 +1,17 @@
 MYSQL andmebaasiserveri paigaldamine ja seadistamine.
 
-Multimeedia iseseisevtöö nr.3
 Keskkond: Ubuntu Server (Virtualbox)
+
 Andmebaas: MSQL Server (8.0)
 
 1.MSQL paigaldamine:
+
   süsteemi uuendamine/ sudo apt update && sudo apt upgrade -y
   serveri paigaldus/ sudo apt install mysql-server -y
   kontroll kas töötab/ sudo systemctl status mysql (running)
   
 Turvaseadistus:
+
   sudo mysql_secure_installation
    password-Yes
    password level-Medium 
@@ -24,11 +26,13 @@ Turvaseadistus:
   kaust/ cd CR-carrent/db
   
   Andmebaasi loomine:
+  
   mysql -u root -p 
   CREATE DATABASE minu_andmebaas;
   andmebaasi importimine/ mysql -u root -p minu_andmebaas  < cr_rent.sql
   
   kontroll kas andmed imporditi:
+  
   mysql -u root -p 
   USE minu_andmebaas;
   SHOW TABLES;
