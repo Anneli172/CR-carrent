@@ -2,8 +2,8 @@
 
 ## 1. Keskkond
 
-Keskkond: Ubuntu Server (Virtualbox)
-Andmebaas: MSQL Server (8.0)
+*Keskkond: Ubuntu Server (Virtualbox)
+*Andmebaas: MSQL Server (8.0)
 
 ## 1. MYSQL paigaldamine
 
