@@ -1,4 +1,4 @@
-MySQL andmebaasiserveri paigaldamine ja seadistamine
+# MySQL andmebaasiserveri paigaldamine ja seadistamine
 
 ## 1. Keskkond
 Ubuntu Server (Virtualbox)  
