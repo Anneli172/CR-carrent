@@ -1,10 +1,11 @@
-MYSQL andmebaasiserveri paigaldamine ja seadistamine.
+ # MySQL andmebaasiserveri paigaldamine ja seadistamine
+
+## 1. Keskkond
 
 Keskkond: Ubuntu Server (Virtualbox)
-
 Andmebaas: MSQL Server (8.0)
 
-1.MSQL paigaldamine:
+## 1. MYSQL paigaldamine
 
   Süsteemi uuendamine
     sudo apt update && sudo apt upgrade -y
