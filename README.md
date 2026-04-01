@@ -35,5 +35,5 @@ SHOW TABLES;
 SELECT * FROM autod;  
 
 
-Tulemus: andmebaas töötab ja sisaldab andmeid.
-Andmebaasis on 41 kirjet tabelis autod.
+Tulemus: andmebaas töötab ja sisaldab andmeid.  
+Andmebaasis on 41 kirjet tabelis autod.  
