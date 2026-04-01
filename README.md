@@ -1,38 +1,39 @@
-1. Keskkond
-Ubuntu Server (Virtualbox)
-MYSQL Server
+# MySQL andmebaasiserveri paigaldamine ja seadistamine
 
-2. Paigaldamine
-sudo apt upgrade -y
-sudo apt install mysql-server -y
-sudo systemctl status mysql
+## 1. Keskkond
+Ubuntu Server (VirtualBox)  
+MySQL Server  
 
-3. Turvamine
-sudo mysql_secure_installation
+## 2. Paigaldamine
+sudo apt upgrade -y  
+sudo apt install mysql-server -y  
+sudo systemctl status mysql  
 
-4. Giit paigaldamine
-sudo apt install git -y
+## 3. Turvamine
+sudo mysql_secure_installation  
 
-5. Giti kloonimine
-git clone https://github.com/Anneli172/CR-carrent.git
-cd CR-Carrent/db
+## 4. Giti paigaldamine
+sudo apt install git -y  
 
-6. Andmebaasi loomine
-mysql -u root -p
+## 5. Giti kloonimine
+git clone https://github.com/Anneli172/CR-carrent.git  
+cd CR-carrent/db  
 
-CREATE DATABASE minu_andmebaas;
+## 6. Andmebaasi loomine
+mysql -u root -p  
 
-7. Andmebaasi import
-mysql -u root -p minu_andmebaas <cr_rent.sql
+CREATE DATABASE minu_andmebaas;  
 
-8. Kontroll
-mysql -u root -p
+## 7. Andmebaasi import
+mysql -u root -p minu_andmebaas < cr_rent.sql  
 
-USE minu_andmebaas;
-SHOW TABLES;
-SELECT * FROM autod;
+## 8. Kontroll
+mysql -u root -p  
 
+USE minu_andmebaas;  
+SHOW TABLES;  
+SELECT * FROM autod;  
 
-Tulemus: andmebaas töötab ja sisaldab andmeid.
+## Tulemus
+Andmebaas töötab ja sisaldab andmeid.  
 Andmebaasis on 41 kirjet tabelis autod.
-
