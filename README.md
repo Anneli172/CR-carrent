@@ -6,9 +6,12 @@ Andmebaas: MSQL Server (8.0)
 
 1.MSQL paigaldamine:
 
-  süsteemi uuendamine/ sudo apt update && sudo apt upgrade -y
-  serveri paigaldus/ sudo apt install mysql-server -y
-  kontroll kas töötab/ sudo systemctl status mysql (running)
+  Süsteemi uuendamine
+    sudo apt update && sudo apt upgrade -y
+  Serveri paigaldus
+    sudo apt install mysql-server -y
+  Kontroll kas töötab
+    sudo systemctl status mysql (running)
   
 Turvaseadistus:
 
