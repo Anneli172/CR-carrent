@@ -1,10 +1,10 @@
 MySQL andmebaasiserveri paigaldamine ja seadistamine
 
-##1. Keskkond
+## 1. Keskkond
 Ubuntu Server (Virtualbox)
 MYSQL Server
 
-##2. Paigaldamine
+## 2. Paigaldamine
 sudo apt upgrade -y
 sudo apt install mysql-server -y
 sudo systemctl status mysql
