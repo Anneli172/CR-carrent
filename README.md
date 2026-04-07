@@ -132,7 +132,5 @@ mysql> SELECT user FROM mysql.user;
 | root             |
 +------------------+
 
-
-
-## Tulemus: Msql on kättesaadav ainult localhosti kaudu. Völised ühendused on piiratud. Andmebaas töötab ja sisaldab andmeid.  
+## Tulemus: Msql on kättesaadav ainult localhosti kaudu. Välised ühendused on piiratud. Andmebaas töötab ja sisaldab andmeid.  
 ## Andmebaasis on 41 kirjet tabelis autod.  
