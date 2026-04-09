@@ -27,7 +27,6 @@ No connection. Trying to reconnect...
 Connection id:    9
 Current database: minu_andmebaas
 
-+---------------+-----------+
 | Variable_name | Value     |
 +---------------+-----------+
 | bind_address  | 127.0.0.1 |
@@ -54,11 +53,11 @@ mysql -u root -p
 
 USE minu_andmebaas;  
 SHOW TABLES;
-+--------------------------+
+
 | Tables_in_minu_andmebaas |
-+--------------------------+
+|--------------------------|
 | autod                    |
-+--------------------------+
+
 
 SELECT * FROM autod;
 | kl | mark | model | engine | fuel | price | image |
