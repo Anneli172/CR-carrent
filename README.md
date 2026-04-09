@@ -28,9 +28,9 @@ Connection id:    9
 Current database: minu_andmebaas
 
 | Variable_name | Value     |
-+---------------+-----------+
+|---------------|-----------|
 | bind_address  | 127.0.0.1 |
-+---------------+-----------+
+
 
 
 ## 4. Git'i paigaldamine
