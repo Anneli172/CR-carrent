@@ -64,7 +64,7 @@
       <img src="https://loremflickr.com/400/250/<?php echo $rida['mark']; ?>" class="card-img-top" alt="audi">
       <div class="card-body">
         <h5 class="card-title"><?php echo $rida['mark']." ".$rida['model']; ?></h5>
-        <p><?php echo $rida['year']; ?></p>
+       
         <p>Mootor: <?php echo $rida['engine']; ?></p>
         <p>Kütus: <?php echo $rida['fuel']; ?></p>
         <p>Hind: <?php echo $rida['price']; ?>£/päev</p>
