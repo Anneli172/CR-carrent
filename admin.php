@@ -1,4 +1,5 @@
 <h1>admin</h1>
+<a href="lisa.php">+ Lisa auto</a><br>
 
 <table border="1">
     <tr>
@@ -15,7 +16,7 @@
 <?php 
     include("config.php");
 
-    $paring = "SELECT * FROM autod LIMIT 8";
+    $paring = "SELECT * FROM autod ORDER BY kl DESC LIMIT 8";
     $valjund = mysqli_query($yhendus, $paring);
 
     while($rida = mysqli_fetch_assoc($valjund)){
