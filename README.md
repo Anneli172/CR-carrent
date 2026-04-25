@@ -132,3 +132,11 @@ Anonüümseid kasutajaid ei ole — kõik kasutajad on nimega:
 | mysql.sys |
 | root |
 
+Käivitus:
+docker compose up --build
+
+Rakendus:
+http://server-ip:8080
+
+Admin login ja andmebaasi seadistused on docker-compose.yml failis.
+
