@@ -1,0 +1,6 @@
+db/
+.db/
+db_old/
+*.log
+*.pid
+*.sock

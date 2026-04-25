@@ -1,15 +1,15 @@
 <?php
 
-$db_server = 'localhost';
-$db_andmebaas = 'cr_rent';
-$db_kasutaja = 'atikker';
-$db_salasona = 'Passw0rd';
+// Proovi Docker ühendust
+$yhendus = @mysqli_connect("db", "root", "password", "cr_rent");
 
-// ühendus andmebaasiga
-$yhendus = mysqli_connect($db_server, $db_kasutaja, $db_salasona, $db_andmebaas);
-
-// ühenduse kontroll
 if (!$yhendus) {
-    die('Ei saa ühendust andmebaasiga');
+    // Kui Docker ei tööta, kasuta kooli lokaalset MySQL-i
+    $yhendus = mysqli_connect("localhost", "atikker", "Passw0rd", "cr_rent");
 }
+
+if (!$yhendus) {
+    die("Ei saa ühendust andmebaasiga");
+}
+
 ?>

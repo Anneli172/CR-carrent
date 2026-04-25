@@ -1,7 +1,32 @@
-<h1>admin</h1>
-<a href="lisa.php">+ Lisa auto</a><br>
+<?php
+session_start();
 
-<table border="1">
+if (!isset($_SESSION['admin'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h1>Admin Panel</h1>
+
+<div>
+<a href="lisax.php" class="btn btn-success">+ Lisa auto</a>
+<a href="logout.php" class="btn btn-danger">Logi välja</a>
+</div>
+</div>
+
+<table class="table table-striped table-bordered bg-white">
     <tr>
         <td>Mark</td>
         <td>Model</td>
@@ -34,3 +59,6 @@
     }
 ?>
 </table>
+</div>
+</body>
+</html>
