@@ -131,3 +131,4 @@ Anonüümseid kasutajaid ei ole — kõik kasutajad on nimega:
 | mysql.session |
 | mysql.sys |
 | root |
+
